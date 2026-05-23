@@ -33,6 +33,17 @@ body{
 .nav-links{list-style:none;display:flex;gap:1rem;margin:0;padding:0;align-items:center}
 .nav-links a{color:#ddd;text-decoration:none;padding:.4rem .6rem;border-radius:8px;transition:background var(--transition),transform var(--transition)}
 .nav-links a:hover{background:var(--glass);transform:translateY(-2px)}
+.nav-toggle{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);color:#fff;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all var(--transition);font-size:1.4rem}
+.nav-toggle:hover{background:rgba(255,255,255,0.14);transform:translateY(-2px)}
+.nav-toggle .menu-dots{line-height:0}
+.btn-cta{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:linear-gradient(135deg,var(--gold),#f0c85e);color:#071019;border:none;padding:.85rem 1.5rem;border-radius:999px;font-weight:700;text-decoration:none;box-shadow:0 18px 50px rgba(201,164,74,.25);transition:transform var(--transition),box-shadow var(--transition)}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 24px 60px rgba(201,164,74,.3)}
+main{padding-top:5.4rem}
+.promo-banner{margin:1rem auto 2rem;padding:1rem 1rem;background:linear-gradient(135deg,rgba(201,164,74,.2),rgba(255,255,255,0.08));border:1px solid rgba(255,255,255,0.08);border-radius:18px;box-shadow:0 18px 50px rgba(0,0,0,.18)}
+.banner-content{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.banner-content .eyebrow{margin:0;color:var(--gold);font-size:.95rem;letter-spacing:1px;text-transform:uppercase;font-weight:700}
+.banner-content h2{margin:.25rem 0 0;color:#fff;font-size:1.2rem;line-height:1.4}
+@media(max-width:700px){.banner-content{flex-direction:column;align-items:flex-start}}
   .nav-links.open{display:flex;flex-direction:column;position:absolute;top:100%;right:1rem;left:1rem;background:rgba(7,7,7,.98);padding:1rem 1.2rem;border-radius:18px;box-shadow:0 25px 95px rgba(0,0,0,.45);gap:.8rem;z-index:70}
   .nav-links.open a{width:100%;text-align:center}
 
