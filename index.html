@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Imperium Barber — Barbearia Premium</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="description" content="Imperium Barber — barbearia premium com cortes, clássicos e modernos. Agende pelo WhatsApp." />
+  </head>
+  <body>
+    <div id="preloader" class="preloader">
+      <div class="loader">
+        <div class="logo">I</div>
+        <div class="loading-text">Imperium Barber</div>
+      </div>
+    </div>
+
+    <header class="nav-wrap">
+      <nav class="navbar">
+        <a href="#home" class="brand">Imperium<span>Barber</span></a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#team">Equipe</a></li>
+          <li><a href="#reviews">Avaliações</a></li>
+          <li><a href="#contact">Localização</a></li>
+        </ul>
+        <a class="btn-cta" href="https://wa.me/5511999999999" target="_blank" rel="noopener" id="hero-cta">Agendar</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <h1>Onde o estilo encontra a excelência</h1>
+            <p class="subtitle">Cortes clássicos e modernos com acabamento cinematográfico.</p>
+            <div class="hero-ctas">
+              <a class="btn-primary" href="https://wa.me/5511999999999" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+              <a class="btn-secondary" href="#services">Ver serviços</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container">
+          <h2>Sobre a Barbearia</h2>
+          <p>Fundada para oferecer um serviço premium, a Imperium Barber combina tradição e técnicas modernas para criar cortes sob medida. Ambiente exclusivo, atendimento personalizado e produtos de alta qualidade.</p>
+        </div>
+      </section>
+
+      <section id="services" class="section services">
+        <div class="container">
+          <h2>Serviços</h2>
+          <div class="services-grid">
+            <article class="service-card">
+              <h3>Corte Premium</h3>
+              <p>Consulta de estilo, corte preciso e acabamento.</p>
+              <div class="price">R$ 120</div>
+            </article>
+            <article class="service-card">
+              <h3>Barba Clássica</h3>
+              <p>Desenho, navalha e finalização com óleo.</p>
+              <div class="price">R$ 65</div>
+            </article>
+            <article class="service-card">
+              <h3>Combo Corte + Barba</h3>
+              <p>Pacote com tratamento e finalização premium.</p>
+              <div class="price">R$ 170</div>
+            </article>
+            <article class="service-card">
+              <h3>Design de Sobrancelha</h3>
+              <p>Ajuste fino para um visual harmônico.</p>
+              <div class="price">R$ 40</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section gallery">
+        <div class="container">
+          <h2>Galeria</h2>
+          <div class="gallery-actions" style="display:flex;justify-content:flex-end;margin-bottom:.8rem;gap:.6rem;flex-wrap:wrap;">
+            <button id="admin-enter" class="btn-secondary">Entrar Admin</button>
+            <button id="add-photo-btn" class="btn-primary admin-only" style="display:none">Adicionar Foto</button>
+            <button id="clear-data-btn" class="btn-secondary admin-only" style="display:none">Limpar Tudo</button>
+          </div>
+          <div id="gallery-grid" class="gallery-grid">
+            <!-- gallery images are rendered by JS -->
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="section team">
+        <div class="container">
+          <h2>Equipe</h2>
+          <div class="team-grid">
+            <div class="team-member">
+                <div class="avatar" style="background-image:url('assets/images/team-1.svg')"></div>
+              <h3>Rafael</h3>
+              <p>Head Barber — especialista em cortes clássicos e fades.</p>
+            </div>
+            <div class="team-member">
+              <div class="avatar" style="background-image:url('assets/images/team-2.svg')"></div>
+              <h3>Guilherme</h3>
+              <p>Barber — styling moderno e acabamento perfeito.</p>
+            </div>
+            <div class="team-member">
+              <div class="avatar" style="background-image:url('assets/images/team-3.svg')"></div>
+              <h3>Lucas</h3>
+              <p>Barber — especialista em barba e design facial.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="section reviews">
+        <div class="container">
+          <h2>Avaliações</h2>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1rem">
+            <div></div>
+            <div>
+              <button id="open-review" class="btn-primary">Avaliar Agora</button>
+            </div>
+          </div>
+          <div id="reviews-slider" class="reviews-slider">
+            <!-- reviews rendered by JS -->
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container contact-grid">
+          <div>
+            <h2>Localização</h2>
+            <p>Venha nos visitar — atendimento com hora marcada.</p>
+            <p class="address">Rua Exemplo, 123 — Centro, Sua Cidade</p>
+            <p class="phone">WhatsApp: <a href="https://wa.me/5511999999999">(11) 99999-9999</a></p>
+          </div>
+          <div class="map-wrap">
+            <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0000000000005!2d-46.633308!3d-23.550520!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bb00000000%3A0x0000000000000000!2sImperium%20Barber!5e0!3m2!1spt-BR!2sbr!4v0000000000000" aria-hidden="false"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a class="whatsapp-fab" href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="Agendar via WhatsApp">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.52 3.48A11.92 11.92 0 0012 .08C5.37.08-.08 5.53-.08 12.16c0 2.13.56 4.21 1.62 6.05L.4 23.6l5.7-1.49a11.99 11.99 0 006.91 1.97c6.63 0 12.08-5.45 12.08-12.08 0-3.23-1.26-6.26-3.57-8.6z" fill="#25D366"/>
+      </svg>
+    </a>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Imperium Barber</h3>
+          <p>Excelência em cada corte.</p>
+        </div>
+        <div class="socials">
+          <a href="#" aria-label="Instagram" class="social">Instagram</a>
+          <a href="#" aria-label="Facebook" class="social">Facebook</a>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span id="year"></span> Imperium Barber — Todos os direitos reservados</div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal-overlay" class="modal-overlay" style="display:none">
+      <div class="modal" role="dialog" aria-modal="true">
+        <button class="modal-close" id="modal-close">✕</button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

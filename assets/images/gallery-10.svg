@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="g14" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#131313" />
+      <stop offset="100%" stop-color="#242424" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#g14)" />
+  <path d="M200 240 h400 v240 h-400 z" fill="#181818" stroke="#c9a44a" stroke-width="14" />
+  <line x1="200" y1="360" x2="600" y2="360" stroke="#fff" stroke-width="4" opacity=".2" />
+  <text x="400" y="520" fill="#eee" font-family="Montserrat, sans-serif" font-size="48" text-anchor="middle">Bold</text>
+</svg>
