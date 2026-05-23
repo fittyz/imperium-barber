@@ -53,6 +53,8 @@ main{padding-top:5.4rem}
 .hero-content{max-width:920px;margin:auto;padding:2rem;text-align:center;backdrop-filter:blur(4px);background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
 .hero h1{font-family:'Cinzel',serif;font-size:3rem;margin:0;color:var(--gold);text-shadow:0 6px 30px rgba(0,0,0,.6)}
 .subtitle{color:var(--muted);font-size:1.1rem;margin-top:.6rem}
+.tools-banner{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem;margin:1.4rem auto 0;max-width:780px;padding:.85rem 1rem;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:999px;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.tools-banner span{display:inline-flex;align-items:center;gap:.35rem;padding:.6rem .9rem;background:rgba(255,255,255,0.08);border-radius:999px;color:#fff;font-size:.98rem;font-weight:600;letter-spacing:.01em}
 .hero-ctas{margin-top:1.2rem;display:flex;gap:1rem;justify-content:center}
 .btn-primary{background:transparent;border:2px solid var(--gold);color:var(--gold);padding:.7rem 1.1rem;border-radius:10px;text-decoration:none;font-weight:700;transition:all var(--transition)}
 .btn-primary:hover{background:var(--gold);color:#071019}
